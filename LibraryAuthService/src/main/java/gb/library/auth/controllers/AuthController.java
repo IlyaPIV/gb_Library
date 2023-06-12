@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
     private final AuthenticationService authService;
 
-    @PostMapping("/auth")
+    @PostMapping("/authenticate")
     public ResponseEntity<JwtResponse> authenticate(@RequestBody JwtRequest request) {
         return ResponseEntity.ok(authService.authenticate(request));
     }
