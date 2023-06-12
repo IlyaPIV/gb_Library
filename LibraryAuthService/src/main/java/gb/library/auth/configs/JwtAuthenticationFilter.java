@@ -1,6 +1,5 @@
 package gb.library.auth.configs;
 
-import gb.library.auth.dtos.UserSecurityDto;
 import gb.library.auth.services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
