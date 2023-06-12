@@ -10,18 +10,27 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
-@Builder
 @NoArgsConstructor
-//@AllArgsConstructor
 @Getter
 @Setter
-public class UserSecurityDto extends User implements UserDetails {
+public class UserSecurityDto implements UserDetails {
+    private String userEmail;
+    private String password;
+    private Set<Role> roles;
+
+    public UserSecurityDto(User user) {
+        userEmail = user.getEmail();
+        password = user.getPassword();
+        roles = user.getRoles();
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        for(Role role: getRoles()){
+        for (Role role : roles) {
             authorities.add(new SimpleGrantedAuthority(role.getRoleType().name()));
         }
         return authorities;
@@ -29,7 +38,7 @@ public class UserSecurityDto extends User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return super.getEmail();
+        return userEmail;
     }
 
     @Override
@@ -49,11 +58,11 @@ public class UserSecurityDto extends User implements UserDetails {
 
     @Override
     public String getPassword() {
-        return super.getPassword();
+        return password;
     }
 
     @Override
     public boolean isEnabled() {
-        return super.isEnabled();
+        return true;
     }
 }

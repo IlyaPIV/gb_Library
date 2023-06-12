@@ -19,9 +19,9 @@ public class AuthenticationService {
 
     public JwtResponse authenticate(JwtRequest request) {
         authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(request.getUserEmail(), request.getPassword())
+                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
         );
-        UserDetails user = userDetailsService.loadUserByUsername(request.getUserEmail());
+        UserDetails user = userDetailsService.loadUserByUsername(request.getEmail());
         String jwtToken = jwtService.generateToken(user);
         return new JwtResponse(jwtToken);
     }
