@@ -21,15 +21,6 @@ public class AuthenticationService {
     private final UserService userService;
 
     public ResponseEntity<?> authenticate(JwtRequest request) {
-//        try {
-//            authenticationManager.authenticate(
-//                    new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
-//        } catch (BadCredentialsException e) {
-//            return new ResponseEntity<>(
-//                    new AppError(HttpStatus.UNAUTHORIZED.value(),
-//                            "Неправильный логин или пароль"), HttpStatus.UNAUTHORIZED);
-//        }
-
         authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
 
