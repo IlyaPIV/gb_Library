@@ -22,6 +22,7 @@
 		<module>LibraryFront</module>
 		<module>LibraryReadersPersonalData</module>
 		<module>LibraryIntegration</module>
+		<module>LibraryAuthService</module>
 	</modules>
 
 	<properties>
