@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -19,10 +18,9 @@ public class AuthenticationService {
     private final UserService userService;
 
     public ResponseEntity<?> authenticate(JwtRequest request) {
-        Authentication authentication = authenticationManager.authenticate(
+        authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
 
-        UserDetails isa = (UserDetails) authentication.getPrincipal();
         UserDetails user = userService.loadUserByUsername(request.getEmail());
         String jwtToken = jwtService.generateToken(user);
         return ResponseEntity.ok(new JwtResponse(jwtToken));
