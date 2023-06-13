@@ -1,8 +1,10 @@
 server:
   port: 8090
+  servlet:
+    context-path: /auth
 jwt:
   secret: RIzJy0x4uGqOztmNB24aI6cyW8FL9+yD0O5TVte5UMRvG9ZKpjFHtxAYNraaADlR
-  lifetime: 3600000
+  lifetime: 60m
 
 spring:
   datasource:

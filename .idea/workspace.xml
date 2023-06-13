@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9d16176-cc22-4b30-af69-1b183f14b5c7" name="Changes" comment="">
+    <list default="true" id="a9d16176-cc22-4b30-af69-1b183f14b5c7" name="Changes" comment="Security with JWT token. Не работает">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWebParent/LibraryBackend/LibraryReader/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWebParent/LibraryBackend/LibraryReader/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/dtos/UserSecurityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/UserSecurityDtoDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAuthService/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAuthService/src/test/java/gb/library/auth/LibraryAuthServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +35,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2QWjHrjCEjyQ3lDHzc66DMIK1lW" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -45,16 +66,50 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;security__service&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kolob/IdeaProjects/gb_Library/LibraryAuthService/src/main/resources/db/migration&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4fda8e41e55fe4e16331011e093e9a19&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21157685&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f6eabe8d4efb35049fe07b98fba1ea42&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.LibraryReaderApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LibraryAuthService/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/dtos" />
+      <recent name="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/utils" />
+      <recent name="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/services" />
+      <recent name="$PROJECT_DIR$/LibraryAuthService/src/main/java/gb/library/auth/repositories" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="LibraryAuthService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="gb.library.auth.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="LibraryAdmin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="gb.library.admin.LibraryAdminApplication" />
@@ -96,23 +151,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="D:\JavaProjects\MyProjects\gb_Library\gen" />
-      <option name="generationParameters">
-        <list />
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="Default" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="D:\JavaProjects\MyProjects\gb_Library\LibraryWebParent\LibraryReadersPersonalData\src\main\resources\openapi\openapi_v1.yaml" />
-      <method v="2" />
+    <configuration name="LibraryReadersPersonalData" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="LibraryReadersPersonalData" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="gb.library.pd.LibraryReadersPersonalData" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="openapi_v1.yaml" type="SwaggerCodegen" temporary="true">
+    <configuration default="true" type="SwaggerCodegen">
       <option name="activeConfigurationType" value="FILE" />
       <option name="configurationPath" value="" />
       <option name="customJreEnabled" value="false" />
@@ -130,8 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="Spring Boot.LibraryFrontApplication" />
-        <item itemvalue="Swagger Codegen.openapi_v1.yaml" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +204,40 @@
       <workItem from="1685997694285" duration="4647000" />
       <workItem from="1686048215215" duration="20549000" />
       <workItem from="1686071736138" duration="273000" />
+      <workItem from="1686464257230" duration="14037000" />
+      <workItem from="1686545721081" duration="16811000" />
+      <workItem from="1686630212239" duration="4160000" />
+      <workItem from="1686663491252" duration="3789000" />
     </task>
+    <task id="LOCAL-00001" summary="Security">
+      <created>1686488895794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686488895794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Security 2">
+      <created>1686558987570</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558987570</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Security with JWT token. Не работает">
+      <created>1686564340840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686564340840</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Security with JWT token. Не работает">
+      <created>1686564352991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686564352991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,5 +253,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Security" />
+    <MESSAGE value="Security 2" />
+    <MESSAGE value="Security with JWT token. Не работает" />
+    <option name="LAST_COMMIT_MESSAGE" value="Security with JWT token. Не работает" />
   </component>
 </project>

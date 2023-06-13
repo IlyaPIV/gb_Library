@@ -1,7 +1,6 @@
 package gb.library.auth.controllers;
 
 import gb.library.auth.dtos.JwtRequest;
-import gb.library.auth.dtos.JwtResponse;
 import gb.library.auth.services.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +14,7 @@ public class AuthController {
     private final AuthenticationService authService;
 
     @PostMapping("/authenticate")
-    public ResponseEntity<JwtResponse> authenticate(@RequestBody JwtRequest request) {
-        return ResponseEntity.ok(authService.authenticate(request));
+    public ResponseEntity<?> authenticate(@RequestBody JwtRequest request) {
+        return authService.authenticate(request);
     }
 }
