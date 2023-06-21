@@ -5,7 +5,6 @@ import gb.library.common.dtos.GenreDTO;
 import gb.library.common.entities.Genre;
 import gb.library.common.exceptions.ObjectInDBNotFoundException;
 import gb.library.backend.repositories.GenreRepository;
-import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

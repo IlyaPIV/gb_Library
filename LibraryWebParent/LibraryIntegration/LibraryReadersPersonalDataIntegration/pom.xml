@@ -5,10 +5,10 @@
     <parent>
         <groupId>gb.library</groupId>
         <artifactId>LibraryIntegration</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
 
-    <artifactId>LibraryReadersPersonalDataIntegration</artifactId>
+    <artifactId>LibraryReadersPersonalDataIntegrationApi</artifactId>
     <name>LibraryReadersPersonalDataIntegration</name>
     <description>Main code for integration with ReadersPersonalData microservice</description>
 

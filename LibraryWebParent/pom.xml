@@ -11,7 +11,7 @@
 
 	<groupId>gb.library</groupId>
 	<artifactId>LibraryWebParent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<name>LibraryWebParent</name>
 	<description>Root project for all Web services</description>
 
@@ -20,6 +20,8 @@
 		<module>LibraryAuth</module>
 		<module>LibraryAdmin</module>
 		<module>LibraryBackend</module>
+		<module>LibraryReader</module>
+		<module>LibraryOfficial</module>
 		<module>LibraryFront</module>
 		<module>LibraryReadersPersonalData</module>
 		<module>LibraryIntegration</module>
@@ -33,8 +35,8 @@
 		<!-- BASIC MUST HAVE -->
 		<dependency>
 			<groupId>gb.library</groupId>
-			<artifactId>LibraryCommon</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>LibraryCommonEntities</artifactId>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
